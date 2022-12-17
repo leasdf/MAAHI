@@ -134,7 +134,7 @@ async def users(event):
       chat = await event.get_chat()
       userid = chat.id
       if userid == mahi:
-        return await event.reply(A_PIC, "How It Is My Baby\n\n Click Below Button To See More Magic", buttons=keyboard)
+        return await x.send_file(A_PIC, "How It Is My Baby\n\n Click Below Button To See More Magic", buttons=keyboard)
       else:
         await event.reply("Sorry Baby You Are Not My Maahi Good Bye")
       
@@ -152,7 +152,6 @@ async def users(event):
     sach = await x.get_response()
     chat =  await event.get_chat()
     if chat.id != legendboy:
-      await event.forward_to(legendboy)
       await event.reply("bas aise hi bata diya", buttons=keyboard)
     else:
       await event.reply("hey sir")
@@ -160,34 +159,38 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"D")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("Soon")
+      await x.send_message("Aap Kkrh Hai? sirf main ek assistant hu krishna ki krishna se baat mat karna par mujhse toh kar sakti ho, hm dono ke bich me hi baat rahegi")
+      await x.get_response()
+      await x.send_message("wow tasty Mujhe Nhi khilaogi")
+      await x.get_response()
+      await x.send_message(f"tumne jo bhi bataya maine krishna ko sab bata diya hihi \nek kiss toh dedo par mereko nhi Mere Sir [Krishna]9(https://t.me/LegendBoy_OP) Ko")
     
       
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"E")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-    await x.send_message("Soon")
+    await x.send_message("Baby kaisa banaya hai maine pure 5 hour ho gya banate banate good night Ms. Mahi Take Care Have A sweet Dream")
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"F")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-    await x.send_message("GIVE STRING SESSION")
+    await x.send_message("Hmm agar Tumko song, pic extraoridinary or bhi add karunga baad me Phir maza aayega Tumhe bhi sikha dunga kabhi")
     
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"G")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("Soonnnnnn")
+      await x.send_message("BlackHeart_181")
     
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"H")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("Soon")
+      await x.send_message("My Baby")
      
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"I")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("soon")
+      await x.send_message("Till then Bye Bye take care padhte rahiye machate rahiye")
       
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"J")))
